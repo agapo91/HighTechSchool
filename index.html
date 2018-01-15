@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/app.css">
+  <link rel="stylesheet" href="./css/particle.css">
+  <title>HighTechSchool</title>
+</head>
+<body>
+  <div class="container-fluid p-0">
+    <div class="row w-100 m-0 fixed-top">
+      <div class="col-12 p-0">
+        <nav class="navbar navbar-expand-md navbar-dark">
+          <a class="navbar-brand font-weight-bold" href="#">HighTechSchool</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav d-flex justify-content-around w-100">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutus.html">¿Quiénes somos?</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Sedes
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="sede-norte.html">Norte</a>
+                  <a class="dropdown-item" href="sede-centro.html">Centro</a>
+                  <a class="dropdown-item" href="sede-sur.html">Sur</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="intranet.html">Intranet</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div id="carouselSlide" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="./images/slide1.jpg" alt="First slide">
+          <div class="carousel-caption d-none d-lg-block text-light">
+            <h2 class="font-weight-bold">Examen de Selección</h2>
+            <p>23 de Marzo</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./images/slide2.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./images/slide3.jpg" alt="Third slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselSlide" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon d-none d-md-inline-block" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next" href="#carouselSlide" role="button" data-slide="next">
+        <span class="carousel-control-next-icon d-none d-md-inline-block" aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="row w-100 mx-0">
+      <div class="col-12 px-0">
+        <div class="jumbotron jumbotron-fluid mb-0 ">
+          <div class="container">
+            <h1 class="display-3 text-center">¿Indeciso sobre tu <span class="text-success">FUTURO</span>?</h1>
+            <p class="lead text-center">¡No dudes más, y se parte de la red de aprendizaje tecnológico mas grande del país!</p>
+            <hr class="my-4">
+            <p class="lead text-center">En <span class="text-info">HighTechSchool</span> estamos comprometidos con tus sueños y trabajaremos juntos hasta cumplirlos.</p>
+            <p class="lead text-center">
+              <a class="btn btn-primary btn-lg d-sm-none" href="tel:992778351" role="button">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                Llámanos
+              </a>
+              <button type="button" class="btn btn-primary btn-lg d-none d-sm-inline-block" data-toggle="modal" data-target="#contactModal">Escríbenos</button>
+            </p>  
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactModalLabel">Déjanos un mensaje</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <form id="needs-validation" novalidate>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-12 mb-3">
+                  <label for="input-name" class="col-form-label">Nombres y Apellidos:</label>
+                  <input type="text" class="form-control" id="input-name" placeholder="Ingresa tu nombre" required>
+                </div>  
+              </div>
+              <div class="row">
+                <div class="col-md-12 mb-3">                      
+                  <label for="input-email" class="col-form-label">Correo electrónico:</label>
+                  <input type="email" class="form-control" id="input-email" aria-describedby="emailHelp" placeholder="correro@ejemplo.com" required>
+                  <small id="emailHelp" class="form-text text-muted">Tranquilo, munca compartiremos tus datos con terceros</small>
+                  <div class="invalid-feedback">
+                    Por favor ingrese un correo válido.
+                  </div>
+                </div>  
+              </div>
+              <div class="row">
+                <div class="col-md-12 mb-3">                      
+                  <label for="message-text" class="col-form-label">Responderemos cualquier consulta:</label>
+                  <textarea class="form-control" id="message-text" required></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Salir</button>
+              <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="row w-100 mx-0 d-none d-xl-block" style="position: relative">
+      <div id="particles-js"></div>
+      <h2 class="title-particle">Sueña, Imagina & Crea</h2>
+    </div>
+    <div class="row w-100 mx-0 my-5">
+      <div class="col-12 col-md-6 col-xl-3">
+        <div class="card p-3 m-3 m-xl-0 text-center">
+          <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+          <div class="card-body">
+            <h4 class="card-title">Éxito 100% Garantizado</h4>
+            <p class="card-text d-none d-md-block">Todos nuestros egresados son, en la actualidad, profesionales exitosos en el rubro tecnológico.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-xl-3">
+        <div class="card p-3 m-3 m-xl-0 text-center">
+          <i class="fa fa-desktop" aria-hidden="true"></i>
+          <div class="card-body">
+            <h4 class="card-title">Mejor Infraestructura</h4>
+            <p class="card-text d-none d-md-block">Contamos con las últimas herramientas tecnológicas que harán de tu experiencia como estudiante la mejor.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-xl-3">
+        <div class="card p-3 m-3 m-xl-0 text-center">
+          <i class="fa fa-comments" aria-hidden="true"></i>
+          <div class="card-body">
+            <h4 class="card-title">Comunicación continua</h4>
+            <p class="card-text d-none d-md-block">Contamos con profesionales que te ofrecerán todo el asesoramiento necesario para seguir adelante.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-xl-3">
+        <div class="card p-3 m-3 m-xl-0 text-center">
+          <i class="fa fa-briefcase" aria-hidden="true"></i>
+          <div class="card-body">
+            <h4 class="card-title">Gran mercado laboral</h4>
+            <p class="card-text d-none d-md-block">¡Te contactamos con los grandes del Mercado! Microsoft, Google & Oracle esperan por ti.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="row mx-0 py-4">
+        <div class="col-12 col-md-8 py-3 px-5 text-center text-md-left">
+          <p class="text-light">Central: Avenida Arequipa 1240</p>
+          <p class="text-light">Telefono: 01-4847489</p>
+          <div class="redes d-flex flex-column flex-md-row">
+            <a class="text-light m-3 my-md-0" href="https://www.facebook.com" target="_blank">
+              <i class="fa fa-facebook" aria-hidden="true"></i>            
+            </a>
+            <a class="text-light m-3 my-md-0" href="https://www.youtube.com" target="_blank">
+              <i class="fa fa-youtube" aria-hidden="true"></i>            
+            </a>
+            <a class="text-light m-3 my-md-0" href="https://www.instagram.com" target="_blank">
+              <i class="fa fa-instagram" aria-hidden="true"></i>            
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <hr class="bg-light d-md-none">
+            <ul class="nav flex-column text-center text-md-left">
+              <li class="nav-item">
+                <a class="nav-link text-info" href="inicio.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="aboutus.html">¿Quiénes somos?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="sedes.html">Sedes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="intranet.html">Intranet</a>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="./js/jquery-3.2.1.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./particles.min.js"></script>
+  <script src="./js/particle.js"></script>
+  <script>
+    (function() {
+    'use strict';
+
+    window.addEventListener('load', function() {
+      var form = document.getElementById('needs-validation');
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }else{
+          alert('mensaje enviado');
+        }
+        form.classList.add('was-validated');
+      }, false);
+    }, false);
+  })();
+  </script>
+</body>
+</html>

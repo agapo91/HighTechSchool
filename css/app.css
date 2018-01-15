@@ -1,0 +1,100 @@
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Raleway'),
+       url(../fonts/Raleway-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Raleway'),
+       url(../fonts/Raleway-Thin.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Raleway'),
+       url(../fonts/Raleway-Bold.ttf) format('truetype');
+}
+body {
+  font-family: Raleway, serif;
+}
+.navbar{
+  font-size: 1.1em;
+  background-color: #2125294d;
+  transition: all .3s ease-out;
+  height: 100%;
+}
+.navbar-brand {
+  font-size: 1.2em;
+  transition: all .3s ease-out;
+}
+.navbar.abajo{
+  background-color: #212529;
+  height: 116%;
+}
+.navbar.abajo .navbar-brand {
+  font-size: 1.3em;
+}
+.carousel-caption {
+  right: initial;
+  font-size: 2.4em;
+}
+.card {
+  position: relative;
+}
+.card i{
+  font-size: 5rem;
+  transition: color .15s ease-out;
+}
+.card h4 {
+  font-size: 1.5rem;
+}
+.card::after{
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -2px;
+  left: -2px;
+  background: rgba(0, 0, 0, 0);
+  width: 0;
+  height: 0;
+  transition: all .3s ease-out;
+  border-radius: 5px;
+}
+.card:hover::after{
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  background: #17a2b8;
+}
+.card:hover i{
+  color: #17a2b8;
+}
+.footer {
+  background: #212529;
+}
+.redes i{
+  font-size: 2rem;
+  transition: all .2s;
+}
+.redes i:hover {
+  color: #17a2b8;
+  transform: scale(1.1);
+}
+.title-particle {
+  font-size:6em;
+  position: absolute;
+  width:100%;
+  top:40%;
+  text-align:center;
+  color:rgba(255, 255, 255, 0.534);
+}
+.intra-bg{
+  height: 600px;
+  background-image: url('../images/intranet.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
